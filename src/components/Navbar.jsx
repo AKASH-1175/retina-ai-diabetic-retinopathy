@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-const LINKS = [['/', 'Home'], ['/analyze', 'Analyze'], ['/about', 'Methodology'], ['/about#about', 'About']];
+const LINKS = [['/', 'Home'], ['/about', 'About']];
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const nav = useNavigate();

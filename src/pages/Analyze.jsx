@@ -45,7 +45,6 @@ export default function Analyze() {
   return (
     <div className="wrap sec narrow">
       <div className="row between"><h1>Analyze a patient</h1><button className="btn" onClick={loadDemo}><FlaskConical size={16} /> Load Demo Patient</button></div>
-      {isDemoMode && <p className="tag warn">DEMO MODE — Simulated prediction</p>}
       <ol className="stepper" aria-label="Progress">{TITLES.map((t, i) => <li key={t} className={i === step ? 'cur' : i < step ? 'ok' : ''} aria-current={i === step ? 'step' : undefined}><span>{i < step ? <Check size={14} /> : i + 1}</span><em>{t}</em></li>)}</ol>
       {banner && <p className="banner" role="alert">{banner}</p>}
       <div className="panel">

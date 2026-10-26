@@ -7,10 +7,9 @@ export default function Home() {
   return (<>
     <section className="hero wrap">
       <div className="herotxt">
-        <span className="tag">Research prototype · Demo mode</span>
         <h1>Multimodal AI for Diabetic Retinopathy Severity</h1>
         <p className="lead">Analyze retinal imaging and clinical information through a unified research workflow designed for explainable diabetic retinopathy severity assessment.</p>
-        <div className="row"><Link to="/analyze" className="btn primary lg">Start Analysis</Link><Link to="/about" className="btn lg">Explore Methodology</Link></div>
+        <div className="row"><Link to="/analyze" className="btn primary lg">Start Analysis</Link></div>
       </div>
       <Pipeline />
     </section>
